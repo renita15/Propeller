@@ -1,6 +1,9 @@
 # Propeller
-Propeller
 #index.js code
+#In order to execute the test run 'testcafe chrome index.js' from the Visual Studio Code command prompt
+#Ensure that the chrome browser UI is open to see the test run
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 import { Selector, t } from "testcafe";
 
 fixture`Getting Started`.page // declare the fixture
