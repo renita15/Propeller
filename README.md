@@ -1,4 +1,4 @@
-# Propeller
+
 #index.js code
 #In order to execute the test run 'testcafe chrome index.js' from the Visual Studio Code command prompt
 #Ensure that the chrome browser UI is open to see the test run
@@ -9,7 +9,7 @@ import { Selector, t } from "testcafe";
 fixture`Getting Started`.page // declare the fixture
 `https:///www.propelleraero.com/`; // specify the start page
 
-test("Propeller QA Challenge", async (t) => {
+test("Test", async (t) => {
   await t
     //maximise the brower window
     .maximizeWindow()
