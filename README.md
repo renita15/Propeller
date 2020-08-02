@@ -6,12 +6,15 @@
 
 import { Selector, t } from "testcafe";
 
-fixture`Getting Started`.page // declare the fixture
-`https:///www.propelleraero.com/`; // specify the start page
+fixture(`Getting Started`).page(
+  // declare the fixture
+  `https:///www.propelleraero.com/`
+); // specify the start page
 
 test("Test", async (t) => {
   await t
     //maximise the brower window
+
     .maximizeWindow()
 
     //click on the Blog link
@@ -54,6 +57,8 @@ test("Test", async (t) => {
 });
 
 function wordCount(words) {
+  words = words.replace(/(^\s*)|(\s*$)/gi, "");
+  words = words.replace(/[ ]{2,}/gi, " ");
+  words = words.replace(/\n /, "\n");
   return words.split(" ").length;
 }
-
